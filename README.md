@@ -48,5 +48,5 @@ MIT
 
    [node.js]: <http://nodejs.org>
    [express]: <http://expressjs.com>
-   [repository]: <http://github.com/>
+   [repository]: <https://github.com/rubenromanvilasau/backend-wisely>
    [Sequelize]: <https://sequelize.org/>
