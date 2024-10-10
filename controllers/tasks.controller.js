@@ -22,14 +22,14 @@ const getUserTasks = async(req, res, next) => {
 };
 
 const createTask = async(req, res, next) => {
-    const { name, user_id } = req.body;
+    const { name, userId } = req.body;
 
-    if(!name || !user_id) return res.status(400).send('Name and user_id are required');
+    if(!name || !userId) return res.status(400).send('Name and userId are required');
 
     try {
         const newTask = await Task.create({
             name,
-            user_id,
+            user_id: userId,
             done: false,
         });
 
