@@ -10,18 +10,22 @@ const Task = sequelize.define(
             primaryKey: true
         },
         name: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
+            allowNull: false,
         },
         done: {
             type: DataTypes.BOOLEAN
         },
         user_id: {
             type: DataTypes.INTEGER,
+            allowNull: false,
         },
     },
     {
         tableName: 'tasks',
         timestamps: true,
+        createdAt: 'created_at',
+        updatedAt: 'updated_at',
     }
 );
 

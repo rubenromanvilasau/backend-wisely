@@ -17,14 +17,14 @@ module.exports = {
         {
             name: 'Rubén Román',
             email: 'rubenromanvilasau@outlook.com',
-            createdAt: new Date(),
-            updatedAt: new Date(),
+            created_at: new Date(),
+            updated_at: new Date(),
         },
         {
             name: 'Wisely Team',
             email: 'wiselyteam@wisely.com',
-            createdAt: new Date(),
-            updatedAt: new Date(),
+            created_at: new Date(),
+            updated_at: new Date(),
         },
     ]);
 
