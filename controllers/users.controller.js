@@ -7,7 +7,6 @@ const getUsers = async(req, res, next) => {
     } catch (error) {
         next(error);
     }
-    res.send('User created');
 };
 
 module.exports = {
