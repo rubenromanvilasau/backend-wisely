@@ -29,11 +29,12 @@ nvm use
 ```
 (there's a .nvmrc file that contains appropiate node version)
 
-Install the dependencies and devDependencies and start the server.
+Install the dependencies and devDependencies.
 
 ```sh
 cd backend-wisely
 npm i
+npx sequelize-cli db:seed:all #Seed the database first
 npm run start
 ```
 
