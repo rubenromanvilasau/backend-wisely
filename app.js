@@ -4,8 +4,8 @@ const routes = require('./routes/index');
 const errorHandler = require('./middlewares/error-middleware');
 require('dotenv').config();
 
-require('./models/Task');
-require('./models/User');
+require('./models/task.model');
+require('./models/user.model');
 
 const app = express();
 

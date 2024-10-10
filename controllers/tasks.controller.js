@@ -1,15 +1,15 @@
-const task = require("../models/Task");
-const user = require("../models/User");
+const Task = require("../models/task.model");
+const User = require("../models/user.model");
 
 const getUserTasks = async(req, res, next) => {
     const { id } = req.params;
 
     try {
-        const userData = await user.findByPk(id);
+        const userData = await User.findByPk(id);
         
         if(!userData) return res.status(404).send('User not found');
 
-        const tasks = await task.findAll({
+        const tasks = await Task.findAll({
             where: {
                 user_id: userData.id,
             }
@@ -27,7 +27,7 @@ const createTask = async(req, res, next) => {
     if(!name || !user_id) return res.status(400).send('Name and user_id are required');
 
     try {
-        const newTask = await task.create({
+        const newTask = await Task.create({
             name,
             user_id,
             done: false,
@@ -43,7 +43,7 @@ const deleteTask = async(req, res, next) => {
     const { taskId } = req.params;
     
     try {
-        const data = await task.destroy({
+        const data = await Task.destroy({
             where: {
                 id: taskId,
             }
@@ -62,7 +62,7 @@ const updateTask = async(req, res, next) => {
     const { name, done } = req.body;
 
     try {
-        const data = await task.update({
+        const data = await Task.update({
             name,
             done,
         }, {
