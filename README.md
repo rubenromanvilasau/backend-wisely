@@ -17,6 +17,9 @@ To-Do API CRUD to handle different tasks
 - [Express] - fast node.js network app framework v4.21.1
 - [Sequelize] - Node.js ORM v6.37.4 
 
+There's a data-model.jpg file where you can see data model.
+There's also a Postman collection JSON file to test API easier.
+
 Repository: [repository]
  on GitHub.
 
