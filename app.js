@@ -2,6 +2,7 @@ const express = require('express');
 const sequelize = require('./database/database');
 const routes = require('./routes/index');
 const errorHandler = require('./middlewares/error-middleware');
+const cors = require('cors');
 require('dotenv').config();
 
 require('./models/task.model');
@@ -11,9 +12,10 @@ const app = express();
 
 app.set('port', process.env.PORT || 3000);
 
-app.use(express.json());
-app.use('/api', routes);
-app.use(errorHandler);
+app.use(cors()); // Enable CORS
+app.use(express.json()); // Enable JSON parsing
+app.use('/api', routes); 
+app.use(errorHandler); // Custom error handler middleware
 
 app.listen(app.get('port'), async () => {
     try {
