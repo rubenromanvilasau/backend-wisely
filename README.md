@@ -46,7 +46,7 @@ npm run dev
 ## There's a .env.example file but here's what you need:
 ### EXAMPLE:
 PORT=<PORT>
-DB_URI=postgres://<USER>:<PASSWORD>@<HOST>:5432/<DATABASE
+DB_URI=postgres://user:password@host:5432/database
 
 ## License
 
