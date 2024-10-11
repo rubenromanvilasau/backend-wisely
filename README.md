@@ -25,6 +25,9 @@ Repository: [repository]
 
 ## Installation
 
+I chose PostgreSQL as database, so you must have a PostgreSQL database, doesn't matter if it's empty, it will be synced with Sequelize.
+#####  Dont forget to fill .ENV with your database URL
+
 It requires [Node.js](https://nodejs.org/) v22.8.0 to run.
 If you have nvm installed you can do 
 ```sh
@@ -37,13 +40,13 @@ Install the dependencies and devDependencies, database will be seeded automatica
 ```sh
 cd backend-wisely
 npm i
-npm run start
+npm run dev
 ```
 
 ## There's a .env.example file but here's what you need:
 ### EXAMPLE:
-PORT=3000
-DB_URI=postgres://postgres:1234@localhost:5432/wisely
+PORT=<PORT>
+DB_URI=postgres://<USER>:<PASSWORD>@<HOST>:5432/<DATABASE
 
 ## License
 
