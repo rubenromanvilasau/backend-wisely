@@ -32,12 +32,11 @@ nvm use
 ```
 (there's a .nvmrc file that contains appropiate node version)
 
-Install the dependencies and devDependencies.
+Install the dependencies and devDependencies, database will be seeded automatically.
 
 ```sh
 cd backend-wisely
 npm i
-npx sequelize-cli db:seed:all #Seed the database first
 npm run start
 ```
 

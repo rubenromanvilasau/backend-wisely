@@ -12,7 +12,8 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-
+   
+   console.log('-----------------SEEDING DATABASE-----------------');
     await queryInterface.bulkInsert('users', [
         {
             name: 'Rubén Román',
@@ -27,6 +28,7 @@ module.exports = {
             updated_at: new Date(),
         },
     ]);
+    console.log('-----------------DATABASE SEEDED-----------------');
 
   },
 
