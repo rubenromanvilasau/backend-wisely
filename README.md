@@ -35,6 +35,8 @@ nvm use
 ```
 (there's a .nvmrc file that contains appropiate node version)
 
+Set database config in /config/config.json file. 
+
 Install the dependencies and devDependencies, database will be seeded automatically.
 
 ```sh
@@ -45,8 +47,8 @@ npm run dev
 
 ## There's a .env.example file but here's what you need:
 ### EXAMPLE:
-PORT=<PORT>
-DB_URI=postgres://user:password@host:5432/database
+NODE_ENV=development
+PORT=PORT
 
 ## License
 

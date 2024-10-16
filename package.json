@@ -10,7 +10,8 @@
   },
   "scripts": {
     "start": "node app.js",
-    "dev": "npx sequelize-cli db:seed:all && nodemon app.js"
+    "dev": "nodemon app.js",
+    "seed": "npx sequelize-cli db:seed:all"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"

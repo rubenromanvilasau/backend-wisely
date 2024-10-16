@@ -5,9 +5,6 @@ const errorHandler = require('./middlewares/error-middleware');
 const cors = require('cors');
 require('dotenv').config();
 
-require('./models/task.model');
-require('./models/user.model');
-
 const app = express();
 
 app.set('port', process.env.PORT || 3000);
